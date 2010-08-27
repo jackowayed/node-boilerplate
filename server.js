@@ -22,18 +22,12 @@ server.error(function(err, req, res, next){
                   header: '#Header#'
                  ,footer: '#Footer#'
                  ,title : '404 - Not Found'
-                 ,description: ''
-                 ,author: ''
-                 ,analyticssiteid: 'XXXXXXX' 
                 } });
     } else {
         res.render('500.ejs', { locals: { 
                   header: '#Header#'
                  ,footer: '#Footer#'
                  ,title : 'The Server Encountered an Error'
-                 ,description: ''
-                 ,author: ''
-                 ,analyticssiteid: 'XXXXXXX'
                  ,error: err 
                 } });
     }
@@ -66,9 +60,6 @@ server.get('/', function(req,res){
               header: '#Header#'
              ,footer: '#Footer#'
              ,title : 'Page Title'
-             ,description: 'Page Description'
-             ,author: 'Your Name'
-             ,analyticssiteid: 'XXXXXXX' 
             }
   });
 });
